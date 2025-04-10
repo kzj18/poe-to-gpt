@@ -9,4 +9,6 @@ services:
       - "3700:3700"
     env_file:
       - .env
+    volumes:
+      - ./app.py:/app/app.py
     restart: unless-stopped
