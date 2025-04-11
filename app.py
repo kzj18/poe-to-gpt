@@ -23,7 +23,7 @@ security = HTTPBearer()
 router = APIRouter()
 
 # 从环境变量获取配置
-PORT = int(os.getenv("PORT", 3700))
+PORT = int(os.getenv("PORT", 3770))
 TIMEOUT = int(os.getenv("TIMEOUT", 120))
 PROXY = os.getenv("PROXY", "")
 

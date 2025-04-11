@@ -36,7 +36,7 @@ vim .env
 Start the project:
 
 ```
-# Runs on port 3700 by default
+# Runs on port 3770 by default
 python app.py
 ```
 
@@ -51,7 +51,7 @@ wget https://raw.githubusercontent.com/formzs/poe-to-gpt/refs/heads/main/.env.ex
 # Copy and modify the configuration file
 cp .env.example .env
 vim .env
-# Start the container, running by default on port 3700
+# Start the container, running by default on port 3770
 docker-compose up -d
 ```
 ##### Method 2: Build the Docker image yourself
@@ -61,7 +61,7 @@ cd poe-to-gpt/
 # Copy and modify the configuration file
 cp .env.example .env
 vim .env
-# Build and start, running by default on port 3700
+# Build and start, running by default on port 3770
 docker compose -f docker-compose-build.yml up -d --build
 ```
 
@@ -69,7 +69,7 @@ docker compose -f docker-compose-build.yml up -d --build
 
 Please refer to [OpenAI documentation](https://platform.openai.com/docs/api-reference/chat/create) for more details on how to use the ChatGPT API.
 
-Simply replace `https://api.openai.com` with `http://localhost:3700` in your code to start using it.
+Simply replace `https://api.openai.com` with `http://localhost:3770` in your code to start using it.
 > Note: Make sure to input your custom API key (corresponding to the `ACCESS_TOKENS` field in `.env`)
 
 Supported routes:

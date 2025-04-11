@@ -13,7 +13,7 @@ COPY app.py .
 # COPY config.toml .
 
 # 暴露端口
-EXPOSE 3700
+EXPOSE 3770
 
 # 启动应用
 CMD ["python", "app.py"]

@@ -37,7 +37,7 @@ vim .env
 启动项目：
 
 ```
-# 默认运行在端口 3700
+# 默认运行在端口 3770
 python app.py
 ```
 
@@ -52,7 +52,7 @@ wget https://raw.githubusercontent.com/formzs/poe-to-gpt/refs/heads/main/.env.ex
 # 复制修改配置文件
 cp .env.example .env
 vim .env
-# 启动容器，默认运行在端口 3700
+# 启动容器，默认运行在端口 3770
 docker-compose up -d
 ```
 ##### 方式二：自构建 docker 镜像
@@ -62,7 +62,7 @@ cd poe-to-gpt/
 # 复制修改配置文件
 cp .env.example .env
 vim .env
-# 构建并启动，默认运行在端口 3700
+# 构建并启动，默认运行在端口 3770
 docker compose -f docker-compose-build.yml up -d --build
 ```
 
@@ -70,7 +70,7 @@ docker compose -f docker-compose-build.yml up -d --build
 
 请查看 [OpenAI 文档](https://platform.openai.com/docs/api-reference/chat/create) 以获取有关如何使用 ChatGPT API 的更多详细信息。
 
-只需在您的代码中将 `https://api.openai.com` 替换为 `http://localhost:3700` 即可开始使用。
+只需在您的代码中将 `https://api.openai.com` 替换为 `http://localhost:3770` 即可开始使用。
 > 注意：请务必输入自定义 API 密钥（对应字段为 `.env` 中的 `ACCESS_TOKENS` ）
 
 支持的路由：
