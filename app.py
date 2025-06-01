@@ -44,13 +44,13 @@ def parse_json_env(env_name, default=None):
             logger.debug(f"Attempted to parse value: {value}")
     return default or []
 
-ACCESS_TOKENS = set(parse_json_env("ACCESS_TOKENS"))
-BOT_NAMES = parse_json_env("BOT_NAMES")
-POE_API_KEYS = parse_json_env("POE_API_KEYS")
-
 # 设置日志
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
+
+ACCESS_TOKENS = set(parse_json_env("ACCESS_TOKENS"))
+BOT_NAMES = parse_json_env("BOT_NAMES")
+POE_API_KEYS = parse_json_env("POE_API_KEYS")
 
 # 初始化代理
 proxy = None
